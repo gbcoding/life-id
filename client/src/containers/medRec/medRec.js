@@ -1,0 +1,17 @@
+var NewComponent = React.createClass({
+  render: function() {
+    return (
+      <div>
+        <p>Enter names in the fields, then click "Submit" to submit the form:</p>
+        <form id="frm1" action="/action_page.php">
+          First name: <input type="text" name="fname" /><br />
+          Last name: <input type="text" name="lname" /><br /><br />
+          <input type="button" onclick="myFunction()" defaultValue="Submit" />
+        </form>
+        <p>Click "Display it" to display the value of each element in the form.</p>
+        <button onclick="myFunction()">Display</button>
+        <p id="demo" />
+      </div>
+    );
+  }
+});
