@@ -1,12 +1,17 @@
 var express = require('express');
-var router = express.Router();
+var indexRouter = express.Router();
+
+const loginRouter = require('./loginRouter');
+const signupRouter = require('./signupRouter');
+
+//Route requests
+indexRouter.use('/login', loginRouter); 
+indexRouter.use('/signup', signupRouter);
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  //res.render('index', { title: 'Express' });
-  res.send({
-    severMessage: "You are connected to backend."
-  });
+indexRouter.get('/', function(req, res, next) {
+
+  console.log("Homepage Accessed");
 });
 
-module.exports = router;
+module.exports = indexRouter;
