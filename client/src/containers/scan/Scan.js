@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import axios from 'axios';
-import { resolveProjectReferencePath } from "typescript";
-import MedRec from "../medRec/medRec";
 
 export default class Scan extends Component {
     constructor(props){
@@ -52,7 +50,7 @@ export default class Scan extends Component {
                 <p>Age: {this.state.Age}</p>
                 <p>Gender: {this.state.Gender}</p>
                 <p>Blood Type: {this.state.BloodType}</p>
-                <p>Exiting Conditions: {this.state.ExistCond}</p>
+                <p>Existing Conditions: {this.state.ExistCond}</p>
                 
             </div>
         )

@@ -1,18 +1,17 @@
 .App {
   text-align: center;
+  height: 100%;
+  margin: 0;
+  background: lightblue;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+
+.mainContent{
+  flex: 1;
 }
-
-body{
-background: lightblue
-
-}
-
 
 input[type=text] {
   width: 20%;

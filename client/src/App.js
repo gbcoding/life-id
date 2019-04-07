@@ -25,9 +25,8 @@ const Main = () => (
 )
 
 const Header = () => (
-  <header style={{textAlign: "left", paddingLeft: 15}}>
-    <h1>Live Life</h1>
-    <img src={logo}></img>
+  <header style={{ paddingLeft: 15, justifyContent: "center" }}> 
+    <img src={logo} style={{width: "300px", height: "300px"}}></img>
   </header>
 )
 
@@ -43,8 +42,10 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
         <View style={{ height: '100%', flexDirection: 'column', alignSelf: 'stretch'}}>
-          <div>
-              <Header />
+        <Header />
+          <div className="mainContent">
+
+              
               <Main /> 
            </div>   
           </View>
