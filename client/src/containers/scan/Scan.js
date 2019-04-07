@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-
 import axios from 'axios';
 import { resolveProjectReferencePath } from "typescript";
+import MedRec from "../medRec/medRec";
 
 export default class Scan extends Component {
     constructor(props){
@@ -46,10 +46,10 @@ export default class Scan extends Component {
 
         return(
             <div>
-              
+
             </div>
-        );
+        )
 
     }
-
+    
 }

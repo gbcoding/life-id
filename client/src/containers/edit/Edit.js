@@ -8,21 +8,21 @@ export default class Edit extends Component {
 
         this.state = {
 
-
         };
 
     }
-
     componentDidMount() {
+
         // Call our fetch function below once the component mounts 
-        this.axiosGET('/edit')
+        this.axiosGET(`/edit/${this.props.match.params.uuid}`)
             .then(response => {
-                this.setState({ serverMessage: response.data.serverMessage});
-                console.log("Edit component mounted and data recieved");
-                console.log(this.state.serverMessage);
+                this.setState({ ...response.data });
+                console.log("MedRec object received");
+                console.log(this.state);
             })
             .catch(err => console.log(err)); 
     }
+
 
     //Async Axios get request
     axiosGET = async(serverPath) => {
