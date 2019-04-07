@@ -6,7 +6,7 @@ import Login from './containers/login/Login';
 import SignUp from './containers/sign_up/SignUp';
 import Scan from './containers/scan/Scan';
 import Edit from './containers/edit/Edit';
-import Home from './containers/home/Home';
+import Directory from './containers/directory/Directory';
 
 import './App.css';
 
@@ -18,6 +18,7 @@ const Main = () => (
       <Route exact path='/login' component={Login}/> 
       <Route exact path='/scan' component={Scan}/>
       <Route exact path='/edit' component={Edit}/>
+      <Route exact path='/directory' component={Directory} />
     </Switch>
   </main>
 )
