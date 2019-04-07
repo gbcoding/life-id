@@ -8,6 +8,20 @@
   pointer-events: none;
 }
 
+body{
+background: lightblue
+
+}
+
+
+input[type=text] {
+  width: 20%;
+  padding: 6x 10px;
+  margin: 4px 0;
+  box-sizing: border-box;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

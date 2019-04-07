@@ -143,10 +143,17 @@ export default class Login extends Component{
                      </form> 
                     
                 </div>
-                
-                
+
                 <div>
-                    <p>
+                
+
+  <label for="fname">First Name: </label>
+  <input type="text" id="fname" name="fname"></input></div>
+  <label for="lname">Last Name: </label>
+  <input type="text" id="lname" name="lname"></input>
+  <div>
+                <button onclick="myFunction()">Submit</button> 
+                    <p> 
                          Don't have an account? <Link to='/SignUp'>Sign Up!</Link>
                     </p> 
                 </div>             
