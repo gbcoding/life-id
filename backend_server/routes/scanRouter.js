@@ -1,6 +1,8 @@
 var express = require('express');
 var scanRouter = express.Router();
 
+
+
 scanRouter.get('/', function(req, res){
 
 
