@@ -1,14 +1,20 @@
 import React, { Component } from "react";
-import MedRec from "../medRec/medRec";
+
 import axios from 'axios';
+import { resolveProjectReferencePath } from "typescript";
 
 export default class Scan extends Component {
     constructor(props){
         super(props);
 
         this.state = {
-
-
+            
+                FirstName: "",
+                LastName: "",
+                Age: "",
+                Gender: "",
+                BloodType: "",
+                ExistCond: ""
         };
     }
 
@@ -16,9 +22,16 @@ export default class Scan extends Component {
         // Call our fetch function below once the component mounts 
         this.axiosGET('/scan')
             .then(response => {
-                this.setState({ serverMessage: response.data.serverMessage});
+                this.setState({
+                    FirstName: response.data.FirstName,
+                    LastName: response.data.LastName,
+                    Age: response.data.Age,
+                    Gender: response.data.Gender,
+                    BloodType: response.data.BloodType,
+                    ExistCond: response.data.ExistCond
+                });
                 console.log("Scan component mounted and data recieved");
-                console.log(this.state.serverMessage);
+                console.log(this.state);
             })
             .catch(err => console.log(err)); 
     }
@@ -38,7 +51,7 @@ export default class Scan extends Component {
 
         return(
             <div>
-                <MedRec />
+              
             </div>
         );
 
