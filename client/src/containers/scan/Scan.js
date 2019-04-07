@@ -46,7 +46,14 @@ export default class Scan extends Component {
 
         return(
             <div>
-
+                <h1>Medical Data</h1>
+                <p>First Name: {this.state.FirstName} </p>
+                <p>Last Name: {this.state.LastName}</p>
+                <p>Age: {this.state.Age}</p>
+                <p>Gender: {this.state.Gender}</p>
+                <p>Blood Type: {this.state.BloodType}</p>
+                <p>Exiting Conditions: {this.state.ExistCond}</p>
+                
             </div>
         )
 
