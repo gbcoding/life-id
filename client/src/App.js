@@ -4,6 +4,8 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Login from './containers/login/Login';
 import SignUp from './containers/sign_up/SignUp';
+import Scan from './containers/scan/Scan';
+import Edit from './containers/edit/Edit';
 import Home from './containers/home/Home';
 
 import './App.css';
@@ -14,6 +16,8 @@ const Main = () => (
     <Switch>
       <Route exact path='/signup' component={SignUp}/>
       <Route exact path='/login' component={Login}/> 
+      <Route exact path='/scan' component={Scan}/>
+      <Route exact path='/edit' component={Edit}/>
     </Switch>
   </main>
 )

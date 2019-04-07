@@ -51,7 +51,7 @@ export default class Login extends Component{
         }
     }
 
-/*
+
     //Async Axios post request
      axiosPOST = async(serverPath, formData) => {
          return axios.post(serverPath, formData)
@@ -98,7 +98,7 @@ export default class Login extends Component{
 
          this.setState({ isLoading: false});
      };
-*/
+
     // Render view of login form
 
 
@@ -108,31 +108,9 @@ export default class Login extends Component{
                     
                 <h1>Login</h1>
                 <div>
-               {/*} <Form>
-                    <Form.Group controlId="email" >
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control 
-                            type="email" 
-                            placeholder="Enter email" 
-                            value={this.state.email}
-                            onChange={this.handleChange}/>
-                    </Form.Group>
-
-                    <Form.Group controlId="password" >
-                            <Form.Label>Password</Form.Label>
-                            <Form.Control
-                                type="password"
-                                value={this.state.password}
-                               onChange={this.handleChange}
-                            
-                            />
-                    </Form.Group>
-
-
-                    </Form>;*/}
                      <form onSubmit={this.handleSubmit}> 
-                    
-                        {/* <FormGroup controlId="email" >
+                    {/*}
+                         <FormGroup controlId="email" >
                             <FormLabel>Email</FormLabel>
                             <FormControl
                                 autoFocus
@@ -140,7 +118,8 @@ export default class Login extends Component{
                                 value={this.state.email}
                                onChange={this.handleChange}
                             />
-                        </FormGroup> */}
+                        </FormGroup>
+                        */} 
                     {/*
                         <FormGroup controlId="password" >
                             <FormLabel>Password</FormLabel>
