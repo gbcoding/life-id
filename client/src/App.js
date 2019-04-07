@@ -8,6 +8,7 @@ import Scan from './containers/scan/Scan';
 import Edit from './containers/edit/Edit';
 import Directory from './containers/directory/Directory';
 
+import logo from './Logo.jpg';
 import './App.css';
 
 // Routes go here
@@ -26,6 +27,7 @@ const Main = () => (
 const Header = () => (
   <header style={{textAlign: "left", paddingLeft: 15}}>
     <h1>Live Life</h1>
+    <img src={logo}></img>
   </header>
 )
 
@@ -42,6 +44,7 @@ class App extends Component {
         <div className="App">
         <View style={{ height: '100%', flexDirection: 'column', alignSelf: 'stretch'}}>
           <div>
+              <Header />
               <Main /> 
            </div>   
           </View>
