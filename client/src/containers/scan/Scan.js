@@ -14,23 +14,18 @@ export default class Scan extends Component {
                 Age: "",
                 Gender: "",
                 BloodType: "",
-                ExistCond: ""
+                ExistCond: "",
+                UUID: ""
         };
     }
 
     componentDidMount() {
+
         // Call our fetch function below once the component mounts 
-        this.axiosGET('/scan')
+        this.axiosGET(`/scan/${this.props.match.params.uuid}`)
             .then(response => {
-                this.setState({
-                    FirstName: response.data.FirstName,
-                    LastName: response.data.LastName,
-                    Age: response.data.Age,
-                    Gender: response.data.Gender,
-                    BloodType: response.data.BloodType,
-                    ExistCond: response.data.ExistCond
-                });
-                console.log("Scan component mounted and data recieved");
+                this.setState({ ...response.data });
+                console.log("MedRec object received");
                 console.log(this.state);
             })
             .catch(err => console.log(err)); 
