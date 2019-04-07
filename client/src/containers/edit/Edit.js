@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import MedRec from "../medRec/medRec";
 import axios from 'axios';
 
 export default class Edit extends Component {
@@ -39,7 +39,7 @@ export default class Edit extends Component {
 
         return(
             <div>
-
+                  <MedRec />
 
             </div>
         );
