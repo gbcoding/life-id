@@ -1,5 +1,9 @@
-var NewComponent = React.createClass({
-  render: function() {
+import React, { Component } from "react";
+import { Module } from "module";
+
+export default class MedRec extends Component{
+
+   render() {
     return (
       <div>
         <p>Enter names in the fields, then click "Submit" to submit the form:</p>
@@ -14,4 +18,4 @@ var NewComponent = React.createClass({
       </div>
     );
   }
-});
+};
