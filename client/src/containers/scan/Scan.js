@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import MedRec from "../medRec/medRec";
 import axios from 'axios';
 
 export default class Scan extends Component {
@@ -38,16 +38,10 @@ export default class Scan extends Component {
 
         return(
             <div>
-
-
+                <MedRec />
             </div>
         );
 
-
     }
-
-
-
-
 
 }

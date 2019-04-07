@@ -17,4 +17,6 @@ scanRouter.post('/', function(req, res){
     });
 });
 
-module.exports = scanRouter;
+scanRouter.
+mo
+dule.exports = scanRouter;
