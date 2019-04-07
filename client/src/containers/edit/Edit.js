@@ -6,8 +6,14 @@ export default class Edit extends Component {
     constructor(props){
         super(props);
 
-        this.state = {
-
+        this.state = {            
+            FirstName: "",
+            LastName: "",
+            Age: "",
+            Gender: "",
+            BloodType: "",
+            ExistCond: "",
+            UUID: ""
         };
 
     }
@@ -36,15 +42,17 @@ export default class Edit extends Component {
     }
 
     render(){
-
         return(
-            <div>
-                  <MedRec />
-
-            </div>
+        <div contenteditable="true">
+	    <h1>Medical Data</h1>
+	    <p> First Name: {this.state.FirstName}</p>
+	    <p> Last Name: {this.state.LastName}</p>
+	    <p> Age: {this.state.Age}</p>
+	    <p> Gender: {this.state.Gender}</p>
+	    <p> Blood Type: {this.state.BloodType}</p>
+	    <p> Existing Condition: {this.state.ExistCond}</p>
+        </div>
         );
-
-
     }
 
 }
